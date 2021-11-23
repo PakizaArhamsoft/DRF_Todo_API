@@ -1,10 +1,10 @@
 # DRF_Todo_API
 <table>
   <td>
-TASKS
+<h3>TASKS</h3>
   </td>
   <td>
-EXPLANATION
+<h3>EXPLANATION</h3>
     </td>
   <tr>
     <td>
