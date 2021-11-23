@@ -6,13 +6,23 @@ TASKS
   <td>
 EXPLANATION
     </td>
+  <td>
 STATUS
+    </td>
+  <tr>
+    <td>
 User Creation API with Basic Authentication
+    </td>
+    <td>
 Register new user with basic credentials first_name, last_name, username, email, password.
-
+</td>
+    <tr>
+    <td>
 Login API with Basic Authentication
+      <td>
 Login the user with valid username & password and generate refresh token and access token
-
+      </td>
+  </tr>
 Employee CRUD API with JWT Authentication
 Create new Employee, Update the specific Employee data, Get all Employees data w.r.t User, Retrieve specific Employee data w.r.t to User, Delete the specific Employee data. 
 
