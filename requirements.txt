@@ -1,0 +1,8 @@
+Django==3.2.9
+django_phonenumber_field==6.0.0
+django_rest_passwordreset==1.2.1
+django_softdelete==0.9.2
+djangorestframework==3.12.4
+djangorestframework_simplejwt==5.0.0
+drf_yasg==1.20.0
+pytest==6.2.5
