@@ -1,7 +1,11 @@
 # DRF_Todo_API
 <table>
+  <td>
 TASKS
+  </td>
+  <td>
 EXPLANATION
+    </td>
 STATUS
 User Creation API with Basic Authentication
 Register new user with basic credentials first_name, last_name, username, email, password.
