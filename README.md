@@ -102,7 +102,7 @@ Test Register, Login and CRUD APIs with valid and invalid credentials.
 Swagger Documentation
       </td>
    <td>
-DRF Todo API Swagger UI
+DRF Todo API Swagger UI.
      Run http://127.0.0.1:8000/swagger/
  </td>
   </tr>
