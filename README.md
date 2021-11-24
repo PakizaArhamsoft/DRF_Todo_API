@@ -23,7 +23,7 @@ Install PostgreSQL Database using this link: https://tecadmin.net/how-to-install
    
 <table>
   <td>
-<h3>API's</h3>
+<h3>TASKS</h3>
   </td>
   <td>
 <h3>EXPLANATION</h3>
