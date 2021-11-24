@@ -1,7 +1,29 @@
-# DRF_Todo_API
+# Django-rest-framework CRUD API
+To Do list app with User Registration, Login and full Create Read Update and DELETE functionality with Authentication.
+## Django Project Setup
+ pip install -r requirements.txt
+
+1. django-admin startproject DRF_Todo
+2. python manage.py makemigrations
+3. python manage.py migrate
+4. python manage.py createsuperuser
+
+### Just Run this command for server deployment:
+  python manage.py runserver
+
+### Database Configuartion with Django:
+Install PostgreSQL Database using this link: https://tecadmin.net/how-to-install-postgresql-in-ubuntu-20-04/
+
+## Create Django app:
+### Run this command: 
+   python manage.py startapp todo_app
+   
+## Clonning Project:
+   git clone https://github.com/PakizaArhamsoft/DRF_Todo_API
+   
 <table>
   <td>
-<h3>TASKS</h3>
+<h3>API's</h3>
   </td>
   <td>
 <h3>EXPLANATION</h3>
@@ -81,6 +103,7 @@ Swagger Documentation
       </td>
    <td>
 DRF Todo API Swagger UI
+     Run http://127.0.0.1:8000/swagger/
  </td>
   </tr>
       <tr>
