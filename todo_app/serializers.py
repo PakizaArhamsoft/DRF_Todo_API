@@ -10,7 +10,8 @@ class RegisterSerializer(serializers.ModelSerializer):
     """
     Create new User Model Serializer
     """
-    class Meta:
+
+    class Meta:  # pylint: disable=R0903
         """
             fields behaviour inner Model class
         """
@@ -35,7 +36,8 @@ class PositionSerializer(serializers.ModelSerializer):
     """
         Create Position Model Serializer
     """
-    class Meta:
+
+    class Meta:  # pylint: disable=R0903
         """
             fields behaviour inner Model class
         """
@@ -47,7 +49,8 @@ class EmployeeSerializer(serializers.ModelSerializer):
     """
     Create Employee Model Serializer
     """
-    class Meta:
+
+    class Meta:  # pylint: disable=R0903
         """
         fields behaviour inner Model class
         """

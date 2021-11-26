@@ -5,20 +5,19 @@ from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 
-
 schema_view = get_schema_view(
-   openapi.Info(
-      title="Employee CRUD API",
-      default_version='v1',
-      description="Todo app test",
-      terms_of_service="https://www.google.com/policies/terms/",
-      contact=openapi.Contact(email="contact@xyz.local"),
-      license=openapi.License(name="BSD License"),
-   ),
-   public=True,
-   permission_classes=(permissions.AllowAny,),
+    openapi.Info(
+        title="Employee CRUD API",
+        default_version='v1',
+        description="Todo app test",
+        terms_of_service="https://www.google.com/policies/terms/",
+        contact=openapi.Contact(email="contact@xyz.local"),
+        license=openapi.License(name="BSD License"),
+    ),
+    public=True,
+    permission_classes=(permissions.AllowAny,),
 )
-urlpatterns = [
+urlpatterns = [  # pylint: disable=C0103
     path('admin/', admin.site.urls),
     path('', include('todo_app.urls')),
     path('auth/', include('rest_framework.urls')),

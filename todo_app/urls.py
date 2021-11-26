@@ -11,7 +11,7 @@ APP_NAME = "todo_app"
 ROUTER = DefaultRouter()
 ROUTER.register(r'employee-view', views.EmployeeViewSet, basename='employee')
 
-urlpatterns = [
+urlpatterns = [  # pylint: disable=C0103
     path('', include(ROUTER.urls)),
     path('reg/', views.RegUserView.as_view(), name='register'),
 ]

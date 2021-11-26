@@ -34,6 +34,12 @@ class Employee(SoftDeleteObject, models.Model):
     position = models.ForeignKey(Position, on_delete=models.CASCADE, null=False)
     indexes = [models.Index(fields=['title'])]
 
+    class Meta:  # pylint: disable=R0903
+        """
+        Employee Data ordering
+        """
+        ordering = ['id']
+
     def __str__(self):
         data = str(self.emp_name) + " ______ " + str(self.position)
         return data
@@ -44,13 +50,13 @@ def password_reset_token_created(sender, instance, reset_password_token, *args, 
     """
     Token Created for Reset Password
     """
-
-    email_plaintext_message = "{}?token={}".format(reverse('password_reset:reset-password-request'),
-                                                   reset_password_token.key)
+    email_plaintext_message = f"" \
+                              f"{reverse('password_reset:reset-password-request')}" \
+                              f"?token={reset_password_token.key}"
     print(sender, instance, args, kwargs)
     send_mail(
         # title:
-        "Password Reset for {title}".format(title="Reset Password!!"),
+        f"Password Reset for {'Reset Password!!'}",
         # message:
         email_plaintext_message,
         # from:

@@ -26,7 +26,7 @@ class RegUserView(CreateAPIView):
     serializer_class = RegisterSerializer
 
 
-class EmployeeViewSet(ModelViewSet):
+class EmployeeViewSet(ModelViewSet):  # pylint: disable=R0901
     """
     Employee create, get list of Employees w.r.t User, update,
     delete and retrieve specific Employee data
