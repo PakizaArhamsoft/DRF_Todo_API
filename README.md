@@ -18,6 +18,9 @@ Install PostgreSQL Database using this link: https://tecadmin.net/how-to-install
 ### Run this command: 
    python manage.py startapp todo_app
    
+## Check Code Coverage Report
+ coverage run manage.py test && coverage report
+   
 ## Clonning Project:
    git clone https://github.com/PakizaArhamsoft/DRF_Todo_API
    
